@@ -7,6 +7,20 @@ target 'ReactorKitPractice' do
 
   # Pods for ReactorKitPractice
 
+  ## Rx Family
+
+  pod 'RxSwift', '= 5.1.0'
+  pod 'RxCocoa', '= 5.1.0'
+  pod 'RxSwiftExt', '= 5.2.0'
+  pod 'RxOptional', '= 4.1.0'
+  pod 'RxWebKit', '= 1.0.0'
+  pod 'RxDataSources', '= 4.0.1'
+  pod 'RxKeyboard', '= 1.0.0'
+  pod 'RxGesture'
+  pod 'ReactorKit', '= 2.0.0'
+  pod 'RxAppState'
+  pod 'RxAlamofire', '= 5.1.0'
+
   target 'ReactorKitPracticeTests' do
     inherit! :search_paths
     # Pods for testing
