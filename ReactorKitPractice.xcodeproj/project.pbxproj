@@ -11,7 +11,6 @@
 		94E202A7B985972BEB1BB70E /* Pods_ReactorKitPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40954B37C6C003E25D68247A /* Pods_ReactorKitPractice.framework */; };
 		E504BEC2264B7E2A0062921F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504BEC1264B7E2A0062921F /* AppDelegate.swift */; };
 		E504BEC4264B7E2A0062921F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504BEC3264B7E2A0062921F /* SceneDelegate.swift */; };
-		E504BEC6264B7E2A0062921F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504BEC5264B7E2A0062921F /* ViewController.swift */; };
 		E504BECC264B7E2A0062921F /* ReactorKitPractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E504BECA264B7E2A0062921F /* ReactorKitPractice.xcdatamodeld */; };
 		E504BECE264B7E2C0062921F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E504BECD264B7E2C0062921F /* Assets.xcassets */; };
 		E504BED1264B7E2C0062921F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E504BECF264B7E2C0062921F /* LaunchScreen.storyboard */; };
@@ -52,7 +51,6 @@
 		E504BEBE264B7E2A0062921F /* ReactorKitPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactorKitPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E504BEC1264B7E2A0062921F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E504BEC3264B7E2A0062921F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E504BEC5264B7E2A0062921F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E504BECB264B7E2A0062921F /* ReactorKitPractice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReactorKitPractice.xcdatamodel; sourceTree = "<group>"; };
 		E504BECD264B7E2C0062921F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E504BED0264B7E2C0062921F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -148,7 +146,6 @@
 				E54A8EA1264B877100817694 /* Sources */,
 				E504BEC1264B7E2A0062921F /* AppDelegate.swift */,
 				E504BEC3264B7E2A0062921F /* SceneDelegate.swift */,
-				E504BEC5264B7E2A0062921F /* ViewController.swift */,
 				E504BECD264B7E2C0062921F /* Assets.xcassets */,
 				E504BECF264B7E2C0062921F /* LaunchScreen.storyboard */,
 				E504BED2264B7E2C0062921F /* Info.plist */,
@@ -439,7 +436,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E54A8EA3264B879B00817694 /* RootViewController.swift in Sources */,
-				E504BEC6264B7E2A0062921F /* ViewController.swift in Sources */,
 				E54A8F19264BC29200817694 /* SampleViewController.swift in Sources */,
 				E504BEC2264B7E2A0062921F /* AppDelegate.swift in Sources */,
 				E504BECC264B7E2A0062921F /* ReactorKitPractice.xcdatamodeld in Sources */,
