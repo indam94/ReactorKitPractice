@@ -18,6 +18,8 @@
 		E504BEDC264B7E2C0062921F /* ReactorKitPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504BEDB264B7E2C0062921F /* ReactorKitPracticeTests.swift */; };
 		E504BEE7264B7E2C0062921F /* ReactorKitPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504BEE6264B7E2C0062921F /* ReactorKitPracticeUITests.swift */; };
 		E54A8EA3264B879B00817694 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54A8EA2264B879B00817694 /* RootViewController.swift */; };
+		E54A8F19264BC29200817694 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54A8F18264BC29200817694 /* SampleViewController.swift */; };
+		E54A8F21264BC29E00817694 /* SampleViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54A8F20264BC29E00817694 /* SampleViewReactor.swift */; };
 		E82DC7053EA246E4A6005E22 /* Pods_ReactorKitPracticeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3670EB498171494BB4C96732 /* Pods_ReactorKitPracticeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 		E504BEE6264B7E2C0062921F /* ReactorKitPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactorKitPracticeUITests.swift; sourceTree = "<group>"; };
 		E504BEE8264B7E2C0062921F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E54A8EA2264B879B00817694 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		E54A8F18264BC29200817694 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
+		E54A8F20264BC29E00817694 /* SampleViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewReactor.swift; sourceTree = "<group>"; };
 		F9593B5518AE52E605940037 /* Pods-ReactorKitPracticeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactorKitPracticeTests.release.xcconfig"; path = "Target Support Files/Pods-ReactorKitPracticeTests/Pods-ReactorKitPracticeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,6 +178,7 @@
 		E54A8EA0264B875F00817694 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E54A8F17264BC28200817694 /* Sample */,
 				E54A8EA2264B879B00817694 /* RootViewController.swift */,
 			);
 			path = ViewControllers;
@@ -185,6 +190,15 @@
 				E54A8EA0264B875F00817694 /* ViewControllers */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		E54A8F17264BC28200817694 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				E54A8F18264BC29200817694 /* SampleViewController.swift */,
+				E54A8F20264BC29E00817694 /* SampleViewReactor.swift */,
+			);
+			path = Sample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,9 +440,11 @@
 			files = (
 				E54A8EA3264B879B00817694 /* RootViewController.swift in Sources */,
 				E504BEC6264B7E2A0062921F /* ViewController.swift in Sources */,
+				E54A8F19264BC29200817694 /* SampleViewController.swift in Sources */,
 				E504BEC2264B7E2A0062921F /* AppDelegate.swift in Sources */,
 				E504BECC264B7E2A0062921F /* ReactorKitPractice.xcdatamodeld in Sources */,
 				E504BEC4264B7E2A0062921F /* SceneDelegate.swift in Sources */,
+				E54A8F21264BC29E00817694 /* SampleViewReactor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
