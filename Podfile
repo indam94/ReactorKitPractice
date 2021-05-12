@@ -20,6 +20,7 @@ target 'ReactorKitPractice' do
   pod 'ReactorKit', '= 2.0.0'
   pod 'RxAppState'
   pod 'RxAlamofire', '= 5.1.0'
+  pod 'SnapKit', '= 5.0.1'
 
   target 'ReactorKitPracticeTests' do
     inherit! :search_paths
