@@ -16,9 +16,8 @@ final class SampleViewReactor: Reactor{
     }
     
     enum Mutation{
-        case increaseValue
-        case decreaseValue
         case setLoading(Bool)
+        case changeValue(Int)
     }
     
     struct State{
@@ -37,13 +36,13 @@ final class SampleViewReactor: Reactor{
         case .increase:
             return Observable.concat([
                 Observable.just(Mutation.setLoading(true)),
-                Observable.just(Mutation.increaseValue).delay(.seconds(1), scheduler: MainScheduler.instance),
+                Observable.just(Mutation.changeValue(1)).delay(.seconds(1), scheduler: MainScheduler.instance),
                 Observable.just(Mutation.setLoading(false))
             ])
         case .decrease:
             return Observable.concat([
                 Observable.just(Mutation.setLoading(true)),
-                Observable.just(Mutation.decreaseValue).delay(.seconds(1), scheduler: MainScheduler.instance),
+                Observable.just(Mutation.changeValue(-1)).delay(.seconds(1), scheduler: MainScheduler.instance),
                 Observable.just(Mutation.setLoading(false))
             ])
         }
@@ -52,10 +51,8 @@ final class SampleViewReactor: Reactor{
     func reduce(state: State, mutation: Mutation) -> State {
         var newState = state
         switch mutation {
-        case .increaseValue:
-            newState.value += 1
-        case .decreaseValue:
-            newState.value -= 1
+        case .changeValue(let value):
+            newState.value += value
         case .setLoading(let isLoading):
             newState.isLoading = isLoading
         }

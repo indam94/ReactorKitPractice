@@ -76,6 +76,8 @@ final class SampleViewController: UIViewController, View{
     }
     
     func bind(reactor: Reactor) {
+        
+        //Action
         increaseButton.rx.tap
             .map{ Reactor.Action.increase }
             .bind(to: reactor.action)
@@ -86,6 +88,7 @@ final class SampleViewController: UIViewController, View{
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
         
+        //State
         reactor.state
             .map{ $0.value }
             .distinctUntilChanged()
