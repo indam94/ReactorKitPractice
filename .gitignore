@@ -1,0 +1,10 @@
+.DS_Store
+xcuserdata
+*.xcworkspace
+Carthage
+Pods
+fastlane/report.xml
+fat-libs
+tmp
+Nexus
+Bora/Resources/Settings.bundle/com.movefastcompany.bora.latest_result.txt
