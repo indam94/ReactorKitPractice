@@ -41,6 +41,7 @@ PODS:
   - RxWebKit (1.0.0):
     - RxCocoa (~> 5.0)
     - RxSwift (~> 5.0)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - ReactorKit (= 2.0.0)
@@ -54,6 +55,7 @@ DEPENDENCIES:
   - RxSwift (= 5.1.0)
   - RxSwiftExt (= 5.2.0)
   - RxWebKit (= 1.0.0)
+  - SnapKit (= 5.0.1)
 
 SPEC REPOS:
   trunk:
@@ -71,6 +73,7 @@ SPEC REPOS:
     - RxSwift
     - RxSwiftExt
     - RxWebKit
+    - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
@@ -87,7 +90,8 @@ SPEC CHECKSUMS:
   RxSwift: ad5874f24bb0dbffd1e9bb8443604e3578796c7a
   RxSwiftExt: 4ca80336f43c28f11a2825cdd2fc61dd6c044697
   RxWebKit: 9ff7ea0780a093450defc7ff13e218678ebe6e4a
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 6b5a9cba0ffa5e35bf283ca5d707fa1bda4ea93b
+PODFILE CHECKSUM: b9b899d06e3e64f232ac4e1d10dff701d8899c8b
 
 COCOAPODS: 1.10.1
