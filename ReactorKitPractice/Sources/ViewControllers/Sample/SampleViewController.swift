@@ -33,10 +33,11 @@ final class SampleViewController: UIViewController, View{
     }()
     private let valueLabel: UILabel = {
         let aLabel = UILabel()
-        aLabel.text = "0"
+        aLabel.text = ""
         aLabel.textColor = .white
         return aLabel
     }()
+    private let activityIndicatorView = UIActivityIndicatorView()
     
     //MARK: View Life Cycle
     
@@ -67,6 +68,11 @@ final class SampleViewController: UIViewController, View{
         valueLabel.snp.makeConstraints{
             $0.center.equalToSuperview()
         }
+        
+        view.addSubview(activityIndicatorView)
+        activityIndicatorView.snp.makeConstraints{
+            $0.center.equalToSuperview()
+        }
     }
     
     func bind(reactor: Reactor) {
@@ -85,6 +91,12 @@ final class SampleViewController: UIViewController, View{
             .distinctUntilChanged()
             .map{ "\($0)" }
             .bind(to: valueLabel.rx.text)
+            .disposed(by: disposeBag)
+        
+        reactor.state
+            .map{ $0.isLoading }
+            .distinctUntilChanged()
+            .bind(to: activityIndicatorView.rx.isAnimating)
             .disposed(by: disposeBag)
     }
     
